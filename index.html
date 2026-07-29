@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestro Primer Mes ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================================
+                        LLUVIA DE CORAZONES
+    =========================================================== -->
+
+    <div id="heart-rain"></div>
+
+    <!-- ==========================================================
+                        PARTÍCULAS DEL FONDO
+    =========================================================== -->
+
+    <div id="background-particles"></div>
+
+    <!-- ==========================================================
+                        PANTALLA DE BIENVENIDA
+    =========================================================== -->
+
+    <section id="welcome-screen">
+
+        <div class="welcome-card glass">
+
+            <h3>✨ Ola amor de mi vida, espero te guste ✨</h3>
+
+            <h1>
+                Para ti amor, la persona más especial de mi vida
+             </h1>  
+             <p> 
+                TE AMO ❤️
+            </pp>
+
+            <p>
+                Hoy quiero regalarte algo diferente...
+                Un pequeño rincón en Internet hecho solamente para ti.
+            </p>
+
+            <button id="openGift">
+                Abrir mi regalo ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================================
+                            MÚSICA
+    =========================================================== -->
+
+    <!--
+        CAMBIAR AQUÍ EL MP3
+
+        assets/music/cancion.mp3
+    -->
+
+    <audio id="backgroundMusic" loop>
+
+        <source src="assets/music/cancion.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <div id="music-player" class="glass">
+
+        <h4>🎵 Pienso en ti siempre que la escucho</h4>
+
+        <div class="controls">
+
+            <button id="playBtn">
+                ▶
+            </button>
+
+            <button id="pauseBtn">
+                ⏸
+            </button>
+
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.5">
+
+        </div>
+
+        <button id="manualPlay">
+
+            ❤️ Presiona aquí para comenzar la música ❤️
+
+        </button>
+
+    </div>
+
+    <!-- ==========================================================
+                        CONTENIDO PRINCIPAL
+    =========================================================== -->
+
+    <main id="mainContent">
+
+        <!-- ======================================================
+                            HERO
+        ======================================================= -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <h1>
+                    Feliz Primer Mes Amor De Mi Vida ❤️
+                </h1>
+
+                <p>
+
+                    Hace apenas un mes comenzamos esta historia,<br>
+                    y no quiero que acabe nunca,<br>
+                    deseo que esta historia se mantenga en pie,<br>
+                    hasta caminar contigo junto al altar, <br>
+                    hasta permanecer contigo hasta viejitos, <br>
+                    hasta que el ultimo suspiro de mi ser, <br>
+                    se lo lleve el viento... Y seas mi ultimo pensamiento.<br>
+                    Eres todo lo que siempre pedi y soñe,<br>
+                    por eso siento que mi corazón te conoce desde siempre.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+                            FOTO PRINCIPAL
+        ======================================================= -->
+
+        <section class="photo-section">
+
+            <h2>
+
+                Mi Foto Favorita a Tu Ladito ❤️
+
+            </h2>
+
+            <!--
+                REEMPLAZAR ESTA IMAGEN
+
+                assets/img/nosotros.jpg
+            -->
+
+            <div class="photo-frame">
+
+                <img
+                    src="assets/img/nosotros.jpg"
+                    alt="Nuestra foto">
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+                            CONTADOR
+        ======================================================= -->
+
+        <section class="counter-section">
+
+            <h2>
+
+                Este es el tiempo que llevamos juntos
+
+            </h2>
+
+            <p>
+                Y este  tiempo seguira avanzando y avanzando, <br>
+                no tendra fin asi como el amor que siento por ti, <br>
+                seguira avanzando sin parar.
+            </p>
+
+            <!--
+                CAMBIAR LA FECHA EN script.js
+            -->
+
+            <div class="counter">
+
+                <div class="time-box">
+
+                    <span id="months">0</span>
+
+                    <small>Meses</small>
+
+                </div>
+
+                <div class="time-box">
+
+                    <span id="days">0</span>
+
+                    <small>Días</small>
+
+                </div>
+
+                <div class="time-box">
+
+                    <span id="hours">0</span>
+
+                    <small>Horas</small>
+
+                </div>
+
+                <div class="time-box">
+
+                    <span id="minutes">0</span>
+
+                    <small>Minutos</small>
+
+                </div>
+
+                <div class="time-box">
+
+                    <span id="seconds">0</span>
+
+                    <small>Segundos</small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+                        CARTAS PARA TI
+        ======================================================= -->
+
+        <section id="letters">
+
+            <h2>
+
+                Estas cartitas son para  ti 💌
+
+            </h2>
+
+            <div class="letters-grid">
+
+                <!-- Carta 1 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #1
+                        </h3>
+
+                        <p>
+
+                            Gracias por convertir los días normales
+                            en recuerdos extraordinarios, eres la mejor del mundo.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Carta 2 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #2
+                        </h3>
+
+                        <p>
+
+                            Tu sonrisa tiene la increíble capacidad
+                            de mejorar cualquier momento de mi vida.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Carta 3 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #3
+                        </h3>
+
+                        <p>
+
+                            Si volviera a comenzar mi vida,
+                            empezair por elegir encontrarte.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Carta 4 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #4
+                        </h3>
+
+                        <p>
+
+                            A tu lado aprendí lo que signigica 
+                            tener un hogar.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Carta 5 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #5
+                        </h3>
+
+                        <p>
+
+                            Mi lugar favorito siempre será
+                            cualquier sitio donde estés tú.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Carta 6 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #6
+                        </h3>
+
+                        <p>
+
+                            Este primer mes solo es el comienzo
+                            de todo lo hermoso que quiero vivir contigo.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            <!-- Carta 7 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #7
+                        </h3>
+
+                        <p>
+
+                            Tus ojos cual luceros, iluminan mi vida
+                            cada vez que los veo, me encantan demasiado
+                            y deseo que siempre me vean.
+
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            <!-- Carta 8 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #8
+                        </h3>
+
+                        <p>
+
+                            Cada momento a tu lado, hace que me 
+                            enamore un poquito mas de ti. 
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            <!-- Carta 9 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #9
+                        </h3>
+
+                        <p>
+
+                            A veces me pongo a pensar en la suerte 
+                            que tengo de poder compartir mi vida contigo.   
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            <!-- Carta 10 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #10
+                        </h3>
+
+                        <p>
+
+                            Eres la paz que nunca imagine encontrar 
+                            con alguien, contigo todo se siente tan bien.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            <!-- Carta 11 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #11
+                        </h3>
+
+                        <p>
+
+                            Si pudiera pedir un deseo, desearia
+                            que esos ojos y esa sonrisa tuya, 
+                            me alegraran mi vida por siempre.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            <!-- Carta 12 -->
+
+                <div class="envelope">
+
+                    <div class="cover"></div>
+
+                    <div class="letter">
+
+                        <h3>
+                            Carta #12
+                        </h3>
+
+                        <p>
+
+                            Gracias por existir, no necesito una fecha
+                            especial para recordarte lo mucho que te amo.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- ======================================================
+                    RAZONES POR LAS QUE TE AMO
+        ======================================================= -->
+
+        <section id="reasons">
+
+            <h2>
+                Razones por las que te amo ❤️
+            </h2>
+
+            <div class="reasons-grid">
+
+                <div class="reason-card">
+                    ❤️
+                    <h3>Tu sonrisa</h3>
+                    <p>
+                        Tiene el poder de alegrar cualquiera de mis dias.
+                    </p>
+                </div>
+
+                <div class="reason-card">
+                    🌸
+                    <h3>Acurrucarme en ti</h3>
+                    <p>
+                        Porque haces que me sienta en paz.
+                    </p>
+                </div>
+
+                <div class="reason-card">
+                    ✨
+                    <h3>Tu apoyo</h3>
+                    <p>
+                       Me da fuerzas para seguir adelante.
+                    </p>
+                </div>
+
+                <div class="reason-card">
+                    💕
+                    <h3>Tu paciencia</h3>
+                    <p>
+                        Me enseñas que el amor también significa comprender.
+                    </p>
+                </div>
+
+                <div class="reason-card">
+                    🌹
+                    <h3>Tus abrazos</h3>
+                    <p>
+                        Son mi lugar favorito en todo el mundo.
+                    </p>
+                </div>
+
+                <div class="reason-card">
+                    💕
+                    <h3>Tu voz</h3>
+                    <p>
+                        Es el sonido que nunca me canso de escuchar.
+                    </p>
+                </div>
+
+                <div class="reason-card">
+                    💞
+                    <h3>Tus ojos</h3>
+                    <p>
+                       Son el lugar donde siempre quiero perderme. 
+                    </p>
+                </div>
+                <div class="reason-card">
+                    💘
+                    <h3>Tu forma de mirarme</h3>
+                    <p>
+                        Me haces sentir el chico mas afortunado.
+                    </p>
+                </div>
+                <div class="reason-card">
+                    ❣️
+                    <h3>Tus besos</h3>
+                    <p>
+                        Son mi parte favorita del dia.
+                    </p>
+                </div>
+                <div class="reason-card">
+                    💝
+                    <h3>Tu ternura</h3>
+                    <p>
+                        Derrite mi corazon una y otra vez.
+                    </p>
+                </div>
+                <div class="reason-card">
+                    ❤️‍🔥
+                    <h3>Cada parte de ti</h3>
+                    <p>
+                       Porque provocas tanto en mi. 
+                    </p>
+                </div>
+
+                <div class="reason-card">
+                    ❤️‍🩹
+                    <h3>Tu</h3>
+                    <p>
+                        Eres mi razon favorita para sonreir
+                    </p>
+                </div>
+                <div class="reason-card">
+                    ❤️
+                    <h3>Todo de ti</h3>
+                    <p>
+                        Me recuerda porque te eligiria una y mil veces.
+                    </p>
+                </div>
+                <div class="reason-card">
+                    💕
+                    <h3>Nuestro amor ❤️</h3>
+                    <p>
+                        Es mi historia favorita para vivir.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+                        LÍNEA DEL TIEMPO
+        ======================================================= -->
+
+        <section id="timeline">
+
+            <h2>
+                Nuestra Historia ❤️
+            </h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ✨
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Cuando empecé a verte diferente
+                        </h3>
+
+                        <p>
+                            Sin darme cuenta, dejaste de ser solo una amiga. Entre risas y salidas, 
+                            mi corazón decidió fijarse en ti.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        💌
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Aquellas tardes de discoteca
+                        </h3>
+
+                        <p>
+                             Quién diría que unas cuantas salidas con amigos serían el comienzo de la historia más bonita de mi vida.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        🌹
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Mis indirectas favoritas
+                        </h3>
+
+                        <p>
+                            Buscaba cualquier excusa para hablar contigo y hacerte saber, sin decirlo directamente, que quería estar a tu lado.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            La primera vez que tomé tu mano
+                        </h3>
+
+                        <p>
+                            En aquel cesped donde un gesto pequeño, para mí significó dar el primer paso hacia el lugar donde siempre quise estar contigo.
+                        </p>
+
+                    </div>
+
+
+                </div>
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            El beso que cambió todo
+                        </h3>
+
+                        <p>
+                            Ese día reuní todo el valor que tenía para robarte un beso y desde entonces entendí que ya no quería imaginar una vida sin ti.
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Una carta y un Snoopy
+                        </h3>
+
+                        <p>
+                             No podía declararme de cualquier manera, una carta escrita desde el corazón y 
+                             nuestro pequeño Snoopy fueron los testigos del inicio de nuestro amor.
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            La llegada de nuestro hijo
+                        </h3>
+
+                        <p>
+                             Desde ese día, Snoopy dejó de ser un simple peluche para convertirse en el 
+                             primer integrante de nuestra pequeña familia.
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                           Aprendiendo a amarnos
+                        </h3>
+
+                        <p>
+                             No todo ha sido perfecto, pero cada diferencia nos ha enseñado que el amor 
+                             también se demuestra quedándose y creciendo juntos.
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                           Nuestro primer mes
+                        </h3>
+
+                        <p>
+                             Treinta días no alcanzan para medir lo mucho que significas para mí, 
+                             pero sí para confirmar que quiero seguir escribiendo esta historia contigo.
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                           Nuestro primer mes
+                        </h3>
+
+                        <p>
+                             Treinta días no alcanzan para medir lo mucho que significas para mí, 
+                             pero sí para confirmar que quiero seguir escribiendo esta historia contigo.
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                           Lo que aún nos falta vivir
+                        </h3>
+
+                        <p>
+                            Este no es el final, ni siquiera el comienzo del final. 
+                            Es apenas el primer capítulo de una historia que espero contar contigo durante toda la vida.
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                           El Regreso
+                        </h3>
+
+                        <p>
+                            Si algún día volvemos a leer esta página, espero que podamos 
+                            sonreír y decir: 'Mira todo lo que hemos vivido desde aquel primer beso
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                           Capitulo ???
+                        </h3>
+
+                        <p>
+                             Aún no sabemos qué escribirá el destino en esta página...
+                            Solo sé que quiero descubrirlo contigo.
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+                            GALERÍA
+        ======================================================= -->
+
+        <section id="gallery">
+
+            <h2>
+                Nuestros Recuerdos 📸
+            </h2>
+
+            <!--
+                REEMPLAZAR LAS IMÁGENES
+
+                assets/img/
+            -->
+
+            <div class="gallery-grid">
+
+                <img src="assets/img/galeria1.jpg" class="gallery-image">
+
+                <img src="assets/img/galeria2.jpg" class="gallery-image">
+
+                <img src="assets/img/galeria3.jpg" class="gallery-image">
+
+                <img src="assets/img/galeria4.jpg" class="gallery-image">
+
+                <img src="assets/img/galeria5.jpg" class="gallery-image">
+
+                <img src="assets/img/galeria6.jpg" class="gallery-image">
+                <img src="assets/img/galeria7.jpg" class="gallery-image">
+                <img src="assets/img/galeria8.jpg" class="gallery-image">
+                <img src="assets/img/galeria9.jpg" class="gallery-image">
+                <img src="assets/img/galeria10.jpg" class="gallery-image">
+                <img src="assets/img/galeria11.jpg" class="gallery-image">
+                <img src="assets/img/galeria12.jpg" class="gallery-image">
+                <img src="assets/img/galeria13.jpg" class="gallery-image">
+                <img src="assets/img/galeria14.jpg" class="gallery-image">
+                <img src="assets/img/galeria15.jpg" class="gallery-image">
+                <img src="assets/img/galeria16.jpg" class="gallery-image">
+
+            </div>
+
+        </section>
+
+        <!-- ======================
+                LIGHTBOX
+        ======================= -->
+
+        <div id="lightbox">
+
+            <span id="closeLightbox">
+                ✖
+            </span>
+
+            <img id="lightboxImage">
+
+        </div>
+
+        <!-- ======================================================
+                    MENSAJES SORPRESA
+        ======================================================= -->
+
+        <section id="surprises">
+
+            <h2>
+                Mensajes Sorpresa 🎁
+            </h2>
+
+            <div class="surprise-buttons">
+
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+                <button class="surprise-btn">Ábreme ❤️</button>
+
+            </div>
+
+            <div id="surpriseMessage">
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+                    FRASES ROMÁNTICAS
+        ======================================================= -->
+
+        <section id="quotes">
+
+            <h2>
+                Un pensamiento para ti 💖
+            </h2>
+
+            <div class="quote-slider">
+
+                <div class="quote active">
+                    "Cada día contigo confirma que eres el amor de mi vida."
+                </div>
+
+                <div class="quote">
+                    "Contigo aprendí que el verdadero amor sí existe."
+                </div>
+
+                <div class="quote">
+                    "Tu felicidad siempre será una de mis prioridades."
+                </div>
+
+                <div class="quote">
+                    "Gracias por regalarme tantas sonrisas."
+                </div>
+
+                <div class="quote">
+                    "Eres mi casualidad favorita."
+                </div>
+
+                <div class="quote">
+                    "Nuestro primer mes es solo el comienzo de una hermosa historia."
+                </div>
+                 <div class="quote">
+                    "Si tuviera que elegir de nuevo, te volveria a elegir a ti."
+                </div>
+                <div class="quote">
+                    "No importa como termine mi dia, si termina contigo fue el mejor dia para mi."
+                </div>
+                <div class="quote">
+                    "Mi lugar favorito no es un sitio, eres tu, mi hogar."
+                </div>
+                <div class="quote">
+                    "Eres el pensamiento mas bonito que visita mi mente todos los dias."
+                </div>
+                <div class="quote">
+                    "Desde que llegaste mis dias grises coemenzaron a tomar color."
+                </div>
+                <div class="quote">
+                    "Amarte es lo mas facil que he echo en mi vida."
+                </div>
+                <div class="quote">
+                    "No necesito un motivo para pensar en ti, simplemente apareces."
+                </div>
+                <div class="quote">
+                    "Ojala el tiempo pase tan lento cuando estoy contigo pero rapido cuando no."
+                </div>
+                <div class="quote">
+                    "Mi corazon encontro su hogar el dia que te bese por primera vez."
+                </div>
+                <div class="quote">
+                    "Si pudiera pedir un deseo, pediria pasar mas tiempo contigo."
+                </div>
+                <div class="quote">
+                    "No hay regalo mas bonito que poder decirte: Mi niña, mi amor, mi vida."
+                </div>
+            </div>
+
+        </section>
+                <!-- ======================================================
+                DECORACIÓN INSPIRADA EN SNOOPY
+                (Original, sin copiar ilustraciones protegidas)
+        ======================================================= -->
+
+        <section id="cute-world">
+
+            <h2>
+                Un pequeño mundo lleno de amor 🐶❤️
+            </h2>
+
+            <p class="cute-description">
+                Porque sé cuánto te hacen feliz los perritos, preparé un rincón
+                inspirado en ese estilo tierno que tanto te gusta.
+            </p>
+
+            <div class="cute-scene">
+
+                <!-- Casita -->
+
+                <div class="dog-house"></div>
+
+                <!-- Perritos -->
+
+                <div class="puppy puppy-one">
+                    🐶
+                </div>
+
+                <div class="puppy puppy-two">
+                    🐶
+                </div>
+
+                <div class="puppy puppy-three">
+                    🐶
+                </div>
+
+                <!-- Globos -->
+
+                <div class="balloon balloon1">
+                    🎈
+                </div>
+
+                <div class="balloon balloon2">
+                    🎈
+                </div>
+
+                <!-- Huellas -->
+
+                <div class="paw paw1">🐾</div>
+                <div class="paw paw2">🐾</div>
+                <div class="paw paw3">🐾</div>
+                <div class="paw paw4">🐾</div>
+
+                <!-- Estrellas -->
+
+                <div class="star s1">⭐</div>
+                <div class="star s2">✨</div>
+                <div class="star s3">⭐</div>
+                <div class="star s4">✨</div>
+
+                <!-- Corazones -->
+
+                <div class="floating-heart">❤️</div>
+                <div class="floating-heart">💖</div>
+                <div class="floating-heart">💕</div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+                    BOTÓN ESPECIAL
+        ======================================================= -->
+
+        <section id="loveExplosion">
+
+            <h2>
+                Hay algo más...
+            </h2>
+
+            <button id="loveButton">
+
+                Lo mucho que te amo ❤️
+
+            </button>
+
+            <div id="loveResult">
+
+                <h1>
+
+                    Te amo infinitamente ❤️
+
+                </h1>
+
+                <p>
+
+                    Gracias por existir, amor de mi vida. <br>
+                    No prometo una vida perfecta, pero si un amor sincero todos los dias.<br>
+                    Amor estar contigo, amo todo de ti, me encantas tanto,<br>
+                    que sin ti seria infeliz.<br>
+                    Quiero ser la persona que te haga feliz incluso cuando quieras llorar <br>
+                    Desde que estas conmigo, mi futuro tiene sentido porque imagino <br>
+                    que estas en el, me enamore tanto de ti, me sigo enamorando de ti <br>
+                    pero, no me enamore solo de quien eres, sino de tambien quien soy <br>
+                    cuando estoy contigo, y se que hay miles de personas en el mundo, <br>
+                    gracias por elegirme, mi corazon sabe donde esta su hogar: contigo.<br>
+                    Si algun dia dudas de cuanto te amo, mirame a los ojos y encontraras la respuesta.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+                    CARTA FINAL
+        ======================================================= -->
+
+        <section id="final-letter">
+
+            <div class="letter-container glass">
+
+                <h2>
+
+                    Una carta para ti ❤️
+
+                </h2>
+
+                <!--
+                =================================================
+
+                    REEMPLAZAR TODO ESTE TEXTO
+
+                =================================================
+                -->
+
+                <p>
+
+                    Olaa amorcito de mi vida, mi guayabita, mi chinita...
+
+                </p>
+
+                <p>
+
+                    Si estás leyendo esto significa que terminaste este
+                    pequeño regalo que preparé con muchísimo cariño.
+
+                </p>
+
+                <p>
+
+                    Quería hacer algo diferente para recordarte que cada
+                    instante contigo ha sido increíble.
+
+                </p>
+
+                <p>
+
+                    Gracias por hacerme sonreír incluso en los días más
+                    difíciles.
+
+                </p>
+
+                <p>
+
+                    Hoy cumplimos nuestro primer mes juntos, y aunque para 
+                    muchas personas pueda parecer poco tiempo, para mí ha sido 
+                    suficiente para darme cuenta de lo feliz que soy desde que 
+                    llegaste a mi vida.
+
+                </p>
+
+                <p>
+
+                    Gracias por cada sonrisa que me has regalado, por cada abrazo que 
+                    me hace sentir en casa, por cada beso que logra alegrar mi día y por 
+                    cada momento que hemos compartido. 
+
+                </p>
+
+                <p>
+
+                    A tu lado descubrí que el amor no 
+                    siempre necesita grandes gestos, a veces basta con una conversación, una mirada 
+                    o simplemente saber que estás ahí.
+
+                </p>
+
+                <p>
+
+                    En este primer mes hemos empezado a escribir una historia que espero tenga muchísimos capítulos más.
+
+                </p>
+
+                <p>
+
+                    Quiero seguir conociéndote, acompañarte en tus días buenos y en los no tan buenos, 
+                    celebrar tus logros, apoyarte cuando lo necesites y seguir creando recuerdos que algún día 
+                    podamos mirar atrás con una sonrisa.
+
+                </p>
+
+                <p>
+
+                    Espero que cuando vuelvas a abrir esta página dentro
+                    de muchos años podamos sonreír recordando este
+                    pequeño comienzo
+                </p>
+
+                <p>
+
+                    Gracias por elegirme, por confiar en mí y por permitirme ocupar un lugar en tu corazón, 
+                    no sabes lo mucho que significas para mí ni lo especial que te has vuelto en tan poco tiempo.
+
+                </p>
+
+                <p>
+
+                    Prometo seguir cuidando este amor con paciencia, respeto, sinceridad y muchos detalles, 
+                    porque eres una persona que vale cada esfuerzo y cada instante.
+
+                </p>
+                <p>
+                    Feliz primer mes, mi amor. 
+
+                </p>
+                <p>
+
+                    Ojalá este sea solo el primero de muchos más.
+
+                </p>
+                <p>
+
+                    Y si algún día me preguntan cuál ha sido una de las mejores decisiones de mi vida, 
+                    sin dudarlo responderé que fue dejar que mi corazón se enamorara de ti.
+
+                </p>
+
+                <h3>
+
+                    Te amo muchísimo ❤️
+
+                </h3>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ======================================================
+                    FOOTER
+    ======================================================= -->
+
+    <footer>
+
+        <p>
+
+            Gracias por regalarme el mejor primer mes de mi vida.
+
+        </p>
+
+        <p>
+
+            He sido inmensamente feliz contigo.
+
+        </p>
+
+        <p>
+
+            Y esto apenas comienza... ❤️
+
+        </p>
+
+    </footer>
+
+    <!-- ======================================================
+                CONTENEDORES PARA EFECTOS
+    ======================================================= -->
+
+    <!-- Explosión de corazones -->
+
+    <div id="heartExplosion"></div>
+
+    <!-- Confeti -->
+
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Brillos -->
+
+    <div id="sparkles"></div>
+
+    <!-- ======================================================
+                    JAVASCRIPT
+    ======================================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
